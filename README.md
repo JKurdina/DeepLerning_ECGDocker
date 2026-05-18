@@ -16,7 +16,7 @@
 
 ```bash
 git clone https://github.com/JKurdina/DeepLerning_ECGDocker.git
-cd DeepLerning_ECGProject
+cd DeepLerning_ECGDocker
 ```
 
 ### 2. Настройка HuggingFace API ключа
