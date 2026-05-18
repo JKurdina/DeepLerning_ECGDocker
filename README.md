@@ -15,7 +15,7 @@
 ### 1. Клонирование репозитория
 
 ```bash
-git clone https://github.com/JKurdina/DeepLerning_ECGProject.git
+git clone https://github.com/JKurdina/DeepLerning_ECGDocker.git
 cd DeepLerning_ECGProject
 ```
 
