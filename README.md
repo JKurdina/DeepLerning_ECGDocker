@@ -39,22 +39,6 @@ docker build -t deepecg-docker .
 
 ### 4. Запуск контейнера
 
-**Git Bash / macOS / Linux:**
-```bash
-docker run -d --name deepecg \
-  -v $(pwd)/inputs:/app/inputs \
-  -v $(pwd)/outputs:/app/outputs \
-  -v $(pwd)/ecg_signals:/app/ecg_signals:ro \
-  -v $(pwd)/preprocessing:/app/preprocessing \
-  -v $(pwd)/thresholds:/app/thresholds \
-  -v $(pwd)/weights:/app/weights \
-  -v $(pwd)/results:/app/results \
-  -v $(pwd)/tests:/app/tests \
-  deepecg-docker
-```
-
-> **Git Bash на Windows:** если пути не распознаются, добавь `MSYS_NO_PATHCONV=1` перед командой.
-
 **PowerShell:**
 ```powershell
 docker run -d --name deepecg `
@@ -72,6 +56,20 @@ docker run -d --name deepecg `
 **Windows CMD:**
 ```cmd
 docker run -d --name deepecg -v %cd%/inputs:/app/inputs -v %cd%/outputs:/app/outputs -v %cd%/ecg_signals:/app/ecg_signals:ro -v %cd%/preprocessing:/app/preprocessing -v %cd%/thresholds:/app/thresholds -v %cd%/weights:/app/weights -v %cd%/results:/app/results -v %cd%/tests:/app/tests deepecg-docker
+```
+
+**Git Bash / macOS / Linux:**
+```bash
+docker run -d --name deepecg \
+  -v $(pwd)/inputs:/app/inputs \
+  -v $(pwd)/outputs:/app/outputs \
+  -v $(pwd)/ecg_signals:/app/ecg_signals:ro \
+  -v $(pwd)/preprocessing:/app/preprocessing \
+  -v $(pwd)/thresholds:/app/thresholds \
+  -v $(pwd)/weights:/app/weights \
+  -v $(pwd)/results:/app/results \
+  -v $(pwd)/tests:/app/tests \
+  deepecg-docker
 ```
 
 ### 5. Подключение к контейнеру
