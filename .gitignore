@@ -1,6 +1,5 @@
 logs
 weights
-results
 deploy-venv
 playground.py
 playground.ipynb
